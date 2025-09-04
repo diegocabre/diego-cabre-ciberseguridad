@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { FiBook, FiBriefcase, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 
@@ -36,16 +37,24 @@ export default function AboutPage() {
         </motion.h1>
 
         {/* ¿Quién eres? */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="text-2xl font-light mb-8"
-        >
-          Soy Diego Antonio Cabré Perrone, profesional comercial pivotando a la
-          ciberseguridad.
-        </motion.p>
-
+        <div className="flex flex-col mb-8">
+          <Image
+            src="/carnet.jpg"
+            alt="Avatar de Diego Cabré"
+            width={100}
+            height={100}
+            className="rounded-full mb-4 self-center"
+          />
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="text-2xl font-light mb-8"
+          >
+            Soy Diego Antonio Cabré Perrone, profesional comercial pivotando a
+            la ciberseguridad.
+          </motion.p>
+        </div>
         {/* 3 bloques rápidos */}
         <motion.div
           initial={{ opacity: 0 }}

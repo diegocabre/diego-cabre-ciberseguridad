@@ -11,7 +11,7 @@ const challenges = [
     id: 1,
     title: "Desafío de Autenticación y Autorización",
     icon: <FcDataProtection size={28} />,
-    fileUrl: "/doc/desafio_auth.docx",
+    fileUrl: "/doc/desafio_auth.pdf",
     summary:
       "Implementación de políticas de acceso físico y lógico, 2FA, gestión de privilegios y respuesta ante brechas de seguridad.",
     details: `
@@ -40,7 +40,7 @@ Garantizar el acceso seguro a áreas y sistemas mediante controles robustos de a
     id: 2,
     title: "Instalación y configuración de Wazuh SIEM",
     icon: <FcBiohazard size={28} />,
-    fileUrl: "/doc/desafio_wazuh.docx",
+    fileUrl: "/doc/desafio_wazuh.pdf",
     summary:
       "Despliegue completo de Wazuh Manager + Agent en AWS EC2 (Ubuntu & Windows Server 2019) con monitoreo centralizado.",
     details: `
